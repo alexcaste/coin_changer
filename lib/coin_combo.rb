@@ -26,9 +26,10 @@ class Fixnum
             end
 
             if quarters > 1
-                final.push(quarters.to_s.concat(" ").concat(twoq))
-            else
-                final.push(quarters.to_s.concat(" ").concat(oneq))
+                    final.push(quarters.to_s.concat(" ").concat(twoq))
+                elsif quarters == 1
+                    final.push(quarters.to_s.concat(" ").concat(oneq))
+                else
             end
 
             until counter < 10
@@ -37,9 +38,10 @@ class Fixnum
             end
 
             if dimes > 1
-                final.push(dimes.to_s.concat(" ").concat(twod))
-            else
-                final.push(dimes.to_s.concat(" ").concat(oned))
+                    final.push(dimes.to_s.concat(" ").concat(twod))
+                elsif dimes == 1
+                    final.push(dimes.to_s.concat(" ").concat(oned))
+                else
             end
 
             until counter < 5
@@ -48,9 +50,10 @@ class Fixnum
             end
 
             if nickels > 1
-                final.push(nickels.to_s.concat(" ").concat(twon))
-            else
-                final.push(nickels.to_s.concat(" ").concat(onen))
+                    final.push(nickels.to_s.concat(" ").concat(twon))
+                elsif nickels == 1
+                    final.push(nickels.to_s.concat(" ").concat(onen))
+                else
             end
 
             until counter < 1
@@ -60,8 +63,14 @@ class Fixnum
 
             if pennies > 1
                 final.push(pennies.to_s.concat(" ").concat(twop))
-            else
-                final.push(pennies.to_s.concat(" ").concat(onep))
+                elsif pennies == 1
+                    final.push(pennies.to_s.concat(" ").concat(onep))
+                else
+            end
+
+            if quarters == 0 && dimes == 0 && nickels == 0 && pennies == 0
+                return "NOTHING!  God damn, you be broke."
+                else
             end
 
             return show_final = final.join(", ")
