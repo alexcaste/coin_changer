@@ -14,4 +14,9 @@ describe('Fixnum#changer')do
         expect(41.changer()).to(eq("1 quarters, 1 dimes, 1 nickels, 1 pennies"))
     end
 
+    #it returns the proper change for a given numbers citing plurals when neccesary
+    it("returns change with plural words") do
+    expect(41.changer()).to(eq("1 quarter, 1 dime, 1 nickel, 2 pennies"))
+    end
+
 end
