@@ -66,12 +66,6 @@ class Fixnum
 
             return show_final = final.join(", ")
 
-
-            # 
-            # return quarters.to_s.concat(" ").concat(twoq).concat(", ").concat(dimes.to_s).concat(" ").concat(twod).concat(", ").concat(nickels.to_s).concat(" ").concat(twon).concat(", ").concat(pennies.to_s).concat(" ").concat(twop)
-
     end
-
-
 
 end

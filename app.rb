@@ -7,6 +7,6 @@ get('/') do
     erb(:index)
 end
 
-get('/change')
+get('/change') do
     erb(:change)
 end
