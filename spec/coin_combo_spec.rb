@@ -11,12 +11,12 @@ describe('Fixnum#changer')do
 
     #it takes a number and returns the number of quarters, dimes, nickels & pennies to make up the number
     it("takes a number and returns the quarters, dimes, nickels, pennies in number") do
-        expect(41.changer()).to(eq("1 quarters, 1 dimes, 1 nickels, 1 pennies"))
+        expect(41.changer()).to(eq("1 quarter, 1 dime, 1 nickel, 1 penny"))
     end
 
     #it returns the proper change for a given numbers citing plurals when neccesary
     it("returns change with plural words") do
-    expect(41.changer()).to(eq("1 quarter, 1 dime, 1 nickel, 2 pennies"))
+    expect(42.changer()).to(eq("1 quarter, 1 dime, 1 nickel, 2 pennies"))
     end
 
 end
