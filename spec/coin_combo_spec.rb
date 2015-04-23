@@ -6,7 +6,7 @@ describe('Fixnum#changer')do
 
     #it determines the numbers of quarters within a number
     it("takes a given number and divides by 25 to determine the number of quarters") do
-        expect(78).changer().to(eq(3))
+        expect(75.changer()).to(eq(3))
     end
 
 end
